@@ -1,18 +1,17 @@
 const board = document.getElementById('board');
 
-// Loop to create 800 boxes
+// Generate 800 boxes
 for (let i = 0; i < 800; i++) {
   const box = document.createElement('div');
-  box.classList.add('box');
+  box.classList.add('square');
 
-  // 🎯 Change to random color on hover
+  // Hover effect with color disappearing after 1 second
   box.addEventListener('mouseover', () => {
-    const color = getRandomColor(); // Get random color
+    const color = getRandomColor();
     box.style.backgroundColor = color;
 
-    // Remove the color after 1 second
     setTimeout(() => {
-      box.style.backgroundColor = 'black';
+      box.style.backgroundColor = 'rgb(29, 29, 29)';
     }, 1000);
   });
 
