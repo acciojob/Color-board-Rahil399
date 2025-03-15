@@ -11,8 +11,9 @@ for (let i = 0; i < 800; i++) {
     box.style.backgroundColor = color;
 
     setTimeout(() => {
-      box.style.backgroundColor = 'rgb(29, 29, 29)';
-    }, 1000);
+	  box.style.backgroundColor = 'rgb(29, 29, 29)'; // ✅ Fixed here
+	}, 1000);
+
   });
 
   board.appendChild(box);
