@@ -1,1 +1,22 @@
 /*  your css code here. If applicable */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #111;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(40, 1fr); /* 40 columns */
+  grid-template-rows: repeat(20, 1fr); /* 20 rows */
+  gap: 1px; /* Small gap between boxes */
+}
+
+.box {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+}
